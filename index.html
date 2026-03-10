@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BKY6Q83ZG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1BKY6Q83ZG');
+    </script>
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "uas3npnctr");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TechThrive 2.0 - Intra-College Hackathon at Quantum University. Theme: Smart Campus.">
+    <title>TechThrive 2.0 | Smart Campus Hackathon</title>
+    <link rel="icon" type="image/png" href="assets/logo.svg">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="problem-statements.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="loader-box">
+
+            <!-- LOGO -->
+            <div class="loader-logo">
+                <!-- <svg id="svg" version="1.1" viewBox="0 0 300 176.2269938650307" width="300" height="176.2269938650307" xmlns="http://www.w3.org/2000/svg"><svg xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="clip-1"><rect x="0" y="0" transform="scale(0.14648,0.14649)" width="2048" height="1203" fill="none"/></clipPath></defs><g clip-path="url(#clip-1)" fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"></g></svg></svg> -->
+                <svg version="1.1" viewBox="0 0 300 176.2269938650307" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <clipPath id="clip-1">
+                            <rect x="0" y="0" transform="scale(0.14648,0.14649)" width="2048" height="1203"
+                                fill="none" />
+                        </clipPath>
+                    </defs>
+
+                    <g clip-path="url(#clip-1)">
+                        <path
+                            d="M78.22456,60.85207c7.1499,-0.2839 14.40674,0.15616 21.69814,-0.04409c8.15361,-0.22398 14.31694,3.74501 16.16514,11.96688c0.25386,1.12943 0.10503,3.58343 0.10122,4.81951l-0.03003,8.0143l0.00864,8.15259c0.0041,2.04968 0.05786,3.89809 -0.21724,5.94045c-0.87847,6.52362 -6.65039,11.42355 -13.11841,12.2102c-4.75327,0.22603 -10.25112,0.04732 -15.03325,0.07661c-2.89395,0.01787 -9.37734,0.11617 -11.98169,-0.49118c-2.27373,-0.54348 -4.39043,-1.60728 -6.18311,-3.10778c-6.68218,-5.58301 -4.79033,-14.05758 -5.04155,-21.8312c-0.13403,-4.14873 -0.13652,-8.69621 0.23672,-12.81579c0.64849,-7.15836 6.33604,-12.27817 13.39541,-12.8905zM100.95366,101.86228c6.2231,-2.28685 5.41113,-6.17351 5.4208,-11.84735c0.00718,-4.21202 0.01201,-8.44454 -0.03896,-12.65553c-0.05098,-2.86504 -1.91953,-4.98138 -4.46396,-6.12781c-0.8751,-0.40138 -1.81377,-0.64617 -2.77339,-0.72293c-2.97642,-0.26485 -7.78242,0.05376 -10.92847,-0.05303c-1.26094,-0.04277 -7.18901,-0.09126 -8.21484,0.04937c-2.50371,0.38981 -4.87397,2.87369 -5.18716,5.3977c-0.33018,3.39519 -0.18501,6.88208 -0.19805,10.30598c-0.01304,3.46419 -0.11367,6.89424 0.1894,10.35022c0.23218,2.64824 3.68071,5.37397 6.2042,5.64205c2.7832,0.29562 5.8478,-0.03399 8.66587,0.046c2.43984,-0.06094 8.11553,0.26515 10.22373,-0.11822c0.37119,-0.07032 0.73857,-0.15923 1.10083,-0.26646z"
+                            fill="#fefdfe" />
+                        <path
+                            d="M288.60498,60.71965c2.8623,0.01055 6.94189,0.15074 9.67383,-0.08672c-0.65186,1.2686 -3.02344,4.65764 -3.94775,5.98571c-3.13916,4.43439 -6.31934,8.83874 -9.54199,13.21219c-1.38428,1.89865 -3.31055,4.21773 -4.29346,6.3011c-0.36035,0.76262 2.71143,4.59362 3.30176,5.44751c4.41064,6.37684 9.22705,12.4752 13.54688,18.91415c0.27832,0.41559 0.59619,1.00814 0.47754,1.49566c-1.01074,0.21226 -11.24121,0.16832 -12.646,0.04761c-1.04004,-1.20444 -2.77295,-3.85795 -3.74707,-5.25488l-5.54736,-7.83236c-0.94629,-1.35913 -1.83105,-2.81128 -2.85791,-4.07153c-0.34131,-0.4175 -1.70068,-0.4528 -1.9585,-0.19703c-0.73535,0.72893 -1.78271,2.39232 -2.34961,3.21091c-2.23975,3.24138 -4.50879,6.4618 -6.80859,9.66114c-0.93164,1.30288 -2.29248,3.46653 -3.42627,4.50441c-1.54102,0.1065 -2.75098,0.10181 -4.30225,0.07632l-9.31494,-0.09273c2.25293,-4.95399 14.86377,-20.06673 18.54639,-25.7205c0.11279,-0.17388 -0.60352,-1.46988 -0.81885,-1.77487c-2.11377,-2.9818 -4.37549,-5.89899 -6.57129,-8.82395l-11.11377,-14.89653c0.79688,-0.05083 2.81543,-0.15294 3.84521,-0.04951c2.12402,0.21344 8.39941,-0.60295 10.07373,0.59856c0.47461,0.34176 2.67773,3.54461 3.13477,4.17979l5.53271,7.68558c0.81299,1.12709 3.18604,4.96146 4.46484,5.10985c1.78564,-0.63254 10.37988,-14.54656 12.76318,-16.91633c1.00049,-0.99496 2.58545,-0.72263 3.88477,-0.71355z"
+                            fill="#01bed2" />
+                        <path
+                            d="M19.06904,60.84387c3.31787,-0.13052 7.07197,0.01421 10.43643,-0.02549c9.18647,-0.1087 18.54404,0.16011 27.71821,-0.05405c-0.2584,2.41854 -0.11675,6.93614 -0.14385,9.57778c-5.17661,0.08394 -10.39805,0.05713 -15.57979,0.09493c-4.09819,0.06856 -8.19683,0.10152 -12.29561,0.09859c-6.40313,-0.06109 -14.02515,-0.35773 -13.79502,8.27827c0.15952,5.98923 -0.14253,12.12831 0.14077,18.11798c0.21138,1.00829 1.027,2.35629 1.71621,3.03585c2.94873,2.90782 7.7313,2.28524 11.55308,2.26561l9.74253,0.01846l18.53423,0.00879l0.02314,9.6374c-10.24731,0.52766 -21.06636,0.25899 -31.33931,0.2524c-2.94653,-0.0019 -6.5291,-0.08277 -9.38921,-0.68513c-2.03421,-0.41911 -3.93839,-1.31972 -5.553,-2.62627c-2.4316,-1.93 -4.52385,-5.22587 -4.8128,-8.32559c-0.12904,-1.38433 -0.14263,-3.36223 -0.20152,-4.81614c-0.19337,-4.06597 -0.28419,-8.13618 -0.27234,-12.20669c-0.01591,-2.9878 -0.12185,-6.06775 0.06778,-9.04251c0.46614,-7.31276 6.35137,-12.81476 13.45006,-13.6042z"
+                            fill="#fefdfe" />
+                        <path
+                            d="M125.03833,60.84065c0.23921,-0.01948 0.47886,-0.03135 0.7188,-0.03545c7.40552,-0.07808 14.92617,0.05654 22.40156,0.02007c5.08594,0.52648 12.99316,-0.91439 17.84033,0.63269c11.08008,3.53699 10.34326,13.14891 9.93604,22.63528c0.20361,3.65286 -0.21094,7.57717 0.11865,11.21202c0.6665,7.36022 -3.04687,14.25124 -10.46045,16.24116c-3.13916,0.8429 -9.08057,0.46467 -12.71191,0.4632l-19.25098,-0.01025c-1.53442,-0.01157 -7.87485,0.23043 -8.83696,-0.22442c-0.52705,-0.94383 -0.3167,-8.20957 -0.13389,-9.51465l25.01968,0.02183c3.59033,0.00073 7.43848,0.14766 10.98486,-0.14634c3.00732,-0.55651 5.49756,-3.84945 5.55176,-6.83784c0.09082,-5.10428 -0.04102,-10.23318 0.04248,-15.33819c0.02344,-3.15407 0.1333,-5.94836 -2.65869,-7.9954c-2.47266,-1.81266 -3.99902,-1.45523 -6.9082,-1.49009c-1.65674,-0.01992 -3.37646,-0.00322 -5.05371,-0.00278l-17.7936,-0.00542c-2.95723,0.00249 -6.40884,0.1355 -9.2978,-0.00879c-0.11587,-1.58707 -0.39932,-8.73342 0.49204,-9.6166z"
+                            fill="#fefdfe" />
+                        <path
+                            d="M185.76123,60.84841c2.2998,-0.18238 6.86133,-0.03252 9.35449,-0.03164l18.87305,0.00601l15.04248,-0.00689c1.98047,-0.00176 6.00439,-0.12393 7.80762,0.08907c0.49072,0.68088 0.48047,8.72492 0.14209,9.40566c-0.38086,0.24581 -1.12354,0.16744 -1.61719,0.16158c-16.56445,0.22135 -33.23291,-0.08921 -49.78271,0.0958c-0.05859,-1.67496 -0.33545,-8.47574 0.18018,-9.71959z"
+                            fill="#fefdfe" />
+                        <path
+                            d="M186.25342,102.32182l33.25781,-0.00117c5.79639,0.00264 11.81689,0.06885 17.60303,-0.09888c-0.00732,2.24349 0.24316,7.36799 -0.04834,9.31015c-0.33545,0.46379 -0.24902,0.32667 -0.9375,0.49543l-32.29687,-0.04014c-5.98975,-0.00293 -12.32666,-0.06944 -18.29736,0.07764c-0.06152,-1.25776 -0.31494,-9.04647 0.1333,-9.65616z"
+                            fill="#fefdfe" />
+                        <path
+                            d="M235.68311,81.51912l1.35498,0.00483c0.271,2.47348 0.15674,7.06256 0.05127,9.58628c-1.54541,0.1087 -4.14844,0.01699 -5.75098,0.01099l-10.80176,-0.01611l-33.5127,0.02725l-1.48242,-0.03985c0.08057,-3.07086 -0.11133,-6.26199 -0.00586,-9.46118c1.17334,-0.10635 3.5127,-0.0627 4.73438,-0.06416l8.57227,-0.00015l23.72314,0.00674c4.17627,0.00117 9.00293,0.1254 13.11768,-0.05464z"
+                            fill="#fefdfe" />
+                        <!-- KEEP ALL YOUR <path> CODE EXACTLY AS IS FROM HERE -->
+                        <!-- I have trimmed it for readability. You will paste your full path content here -->
+                    </g>
+                </svg>
+
+                <!-- PASTE YOUR FULL SVG CODE HERE -->
+            </div>
+
+            <!-- <img src="assets/Logo2.png" alt="Hackathon Logo" class="loader-logo"> -->
+
+            <!-- Line -->
+            <div class="line">
+                <span id="progress"></span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                <div class="logo-img">
+                    <!-- <svg id="svg" version="1.1" viewBox="0 0 300 176.2269938650307" width="300" height="176.2269938650307" xmlns="http://www.w3.org/2000/svg"><svg xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="clip-1"><rect x="0" y="0" transform="scale(0.14648,0.14649)" width="2048" height="1203" fill="none"/></clipPath></defs><g clip-path="url(#clip-1)" fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"></g></svg></svg> -->
+                    <svg version="1.1" viewBox="0 0 300 176.2269938650307" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <clipPath id="clip-1">
+                                <rect x="0" y="0" transform="scale(0.14648,0.14649)" width="2048" height="1203"
+                                    fill="none" />
+                            </clipPath>
+                        </defs>
+
+                        <g clip-path="url(#clip-1)">
+                            <path
+                                d="M78.22456,60.85207c7.1499,-0.2839 14.40674,0.15616 21.69814,-0.04409c8.15361,-0.22398 14.31694,3.74501 16.16514,11.96688c0.25386,1.12943 0.10503,3.58343 0.10122,4.81951l-0.03003,8.0143l0.00864,8.15259c0.0041,2.04968 0.05786,3.89809 -0.21724,5.94045c-0.87847,6.52362 -6.65039,11.42355 -13.11841,12.2102c-4.75327,0.22603 -10.25112,0.04732 -15.03325,0.07661c-2.89395,0.01787 -9.37734,0.11617 -11.98169,-0.49118c-2.27373,-0.54348 -4.39043,-1.60728 -6.18311,-3.10778c-6.68218,-5.58301 -4.79033,-14.05758 -5.04155,-21.8312c-0.13403,-4.14873 -0.13652,-8.69621 0.23672,-12.81579c0.64849,-7.15836 6.33604,-12.27817 13.39541,-12.8905zM100.95366,101.86228c6.2231,-2.28685 5.41113,-6.17351 5.4208,-11.84735c0.00718,-4.21202 0.01201,-8.44454 -0.03896,-12.65553c-0.05098,-2.86504 -1.91953,-4.98138 -4.46396,-6.12781c-0.8751,-0.40138 -1.81377,-0.64617 -2.77339,-0.72293c-2.97642,-0.26485 -7.78242,0.05376 -10.92847,-0.05303c-1.26094,-0.04277 -7.18901,-0.09126 -8.21484,0.04937c-2.50371,0.38981 -4.87397,2.87369 -5.18716,5.3977c-0.33018,3.39519 -0.18501,6.88208 -0.19805,10.30598c-0.01304,3.46419 -0.11367,6.89424 0.1894,10.35022c0.23218,2.64824 3.68071,5.37397 6.2042,5.64205c2.7832,0.29562 5.8478,-0.03399 8.66587,0.046c2.43984,-0.06094 8.11553,0.26515 10.22373,-0.11822c0.37119,-0.07032 0.73857,-0.15923 1.10083,-0.26646z"
+                                fill="#fefdfe" />
+                            <path
+                                d="M288.60498,60.71965c2.8623,0.01055 6.94189,0.15074 9.67383,-0.08672c-0.65186,1.2686 -3.02344,4.65764 -3.94775,5.98571c-3.13916,4.43439 -6.31934,8.83874 -9.54199,13.21219c-1.38428,1.89865 -3.31055,4.21773 -4.29346,6.3011c-0.36035,0.76262 2.71143,4.59362 3.30176,5.44751c4.41064,6.37684 9.22705,12.4752 13.54688,18.91415c0.27832,0.41559 0.59619,1.00814 0.47754,1.49566c-1.01074,0.21226 -11.24121,0.16832 -12.646,0.04761c-1.04004,-1.20444 -2.77295,-3.85795 -3.74707,-5.25488l-5.54736,-7.83236c-0.94629,-1.35913 -1.83105,-2.81128 -2.85791,-4.07153c-0.34131,-0.4175 -1.70068,-0.4528 -1.9585,-0.19703c-0.73535,0.72893 -1.78271,2.39232 -2.34961,3.21091c-2.23975,3.24138 -4.50879,6.4618 -6.80859,9.66114c-0.93164,1.30288 -2.29248,3.46653 -3.42627,4.50441c-1.54102,0.1065 -2.75098,0.10181 -4.30225,0.07632l-9.31494,-0.09273c2.25293,-4.95399 14.86377,-20.06673 18.54639,-25.7205c0.11279,-0.17388 -0.60352,-1.46988 -0.81885,-1.77487c-2.11377,-2.9818 -4.37549,-5.89899 -6.57129,-8.82395l-11.11377,-14.89653c0.79688,-0.05083 2.81543,-0.15294 3.84521,-0.04951c2.12402,0.21344 8.39941,-0.60295 10.07373,0.59856c0.47461,0.34176 2.67773,3.54461 3.13477,4.17979l5.53271,7.68558c0.81299,1.12709 3.18604,4.96146 4.46484,5.10985c1.78564,-0.63254 10.37988,-14.54656 12.76318,-16.91633c1.00049,-0.99496 2.58545,-0.72263 3.88477,-0.71355z"
+                                fill="#01bed2" />
+                            <path
+                                d="M19.06904,60.84387c3.31787,-0.13052 7.07197,0.01421 10.43643,-0.02549c9.18647,-0.1087 18.54404,0.16011 27.71821,-0.05405c-0.2584,2.41854 -0.11675,6.93614 -0.14385,9.57778c-5.17661,0.08394 -10.39805,0.05713 -15.57979,0.09493c-4.09819,0.06856 -8.19683,0.10152 -12.29561,0.09859c-6.40313,-0.06109 -14.02515,-0.35773 -13.79502,8.27827c0.15952,5.98923 -0.14253,12.12831 0.14077,18.11798c0.21138,1.00829 1.027,2.35629 1.71621,3.03585c2.94873,2.90782 7.7313,2.28524 11.55308,2.26561l9.74253,0.01846l18.53423,0.00879l0.02314,9.6374c-10.24731,0.52766 -21.06636,0.25899 -31.33931,0.2524c-2.94653,-0.0019 -6.5291,-0.08277 -9.38921,-0.68513c-2.03421,-0.41911 -3.93839,-1.31972 -5.553,-2.62627c-2.4316,-1.93 -4.52385,-5.22587 -4.8128,-8.32559c-0.12904,-1.38433 -0.14263,-3.36223 -0.20152,-4.81614c-0.19337,-4.06597 -0.28419,-8.13618 -0.27234,-12.20669c-0.01591,-2.9878 -0.12185,-6.06775 0.06778,-9.04251c0.46614,-7.31276 6.35137,-12.81476 13.45006,-13.6042z"
+                                fill="#fefdfe" />
+                            <path
+                                d="M125.03833,60.84065c0.23921,-0.01948 0.47886,-0.03135 0.7188,-0.03545c7.40552,-0.07808 14.92617,0.05654 22.40156,0.02007c5.08594,0.52648 12.99316,-0.91439 17.84033,0.63269c11.08008,3.53699 10.34326,13.14891 9.93604,22.63528c0.20361,3.65286 -0.21094,7.57717 0.11865,11.21202c0.6665,7.36022 -3.04687,14.25124 -10.46045,16.24116c-3.13916,0.8429 -9.08057,0.46467 -12.71191,0.4632l-19.25098,-0.01025c-1.53442,-0.01157 -7.87485,0.23043 -8.83696,-0.22442c-0.52705,-0.94383 -0.3167,-8.20957 -0.13389,-9.51465l25.01968,0.02183c3.59033,0.00073 7.43848,0.14766 10.98486,-0.14634c3.00732,-0.55651 5.49756,-3.84945 5.55176,-6.83784c0.09082,-5.10428 -0.04102,-10.23318 0.04248,-15.33819c0.02344,-3.15407 0.1333,-5.94836 -2.65869,-7.9954c-2.47266,-1.81266 -3.99902,-1.45523 -6.9082,-1.49009c-1.65674,-0.01992 -3.37646,-0.00322 -5.05371,-0.00278l-17.7936,-0.00542c-2.95723,0.00249 -6.40884,0.1355 -9.2978,-0.00879c-0.11587,-1.58707 -0.39932,-8.73342 0.49204,-9.6166z"
+                                fill="#fefdfe" />
+                            <path
+                                d="M185.76123,60.84841c2.2998,-0.18238 6.86133,-0.03252 9.35449,-0.03164l18.87305,0.00601l15.04248,-0.00689c1.98047,-0.00176 6.00439,-0.12393 7.80762,0.08907c0.49072,0.68088 0.48047,8.72492 0.14209,9.40566c-0.38086,0.24581 -1.12354,0.16744 -1.61719,0.16158c-16.56445,0.22135 -33.23291,-0.08921 -49.78271,0.0958c-0.05859,-1.67496 -0.33545,-8.47574 0.18018,-9.71959z"
+                                fill="#fefdfe" />
+                            <path
+                                d="M186.25342,102.32182l33.25781,-0.00117c5.79639,0.00264 11.81689,0.06885 17.60303,-0.09888c-0.00732,2.24349 0.24316,7.36799 -0.04834,9.31015c-0.33545,0.46379 -0.24902,0.32667 -0.9375,0.49543l-32.29687,-0.04014c-5.98975,-0.00293 -12.32666,-0.06944 -18.29736,0.07764c-0.06152,-1.25776 -0.31494,-9.04647 0.1333,-9.65616z"
+                                fill="#fefdfe" />
+                            <path
+                                d="M235.68311,81.51912l1.35498,0.00483c0.271,2.47348 0.15674,7.06256 0.05127,9.58628c-1.54541,0.1087 -4.14844,0.01699 -5.75098,0.01099l-10.80176,-0.01611l-33.5127,0.02725l-1.48242,-0.03985c0.08057,-3.07086 -0.11133,-6.26199 -0.00586,-9.46118c1.17334,-0.10635 3.5127,-0.0627 4.73438,-0.06416l8.57227,-0.00015l23.72314,0.00674c4.17627,0.00117 9.00293,0.1254 13.11768,-0.05464z"
+                                fill="#fefdfe" />
+                            <!-- KEEP ALL YOUR <path> CODE EXACTLY AS IS FROM HERE -->
+                            <!-- I have trimmed it for readability. You will paste your full path content here -->
+                        </g>
+                    </svg>
+
+                </div>
+                <!-- <img src="assets/logo2.png" alt="TechThrive Logo" class="logo-img"> -->
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#problem-statements">Problem Statements</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#about-event">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="btn btn-primary nav-cta" onclick="openRegisterModal()">
+                        Register
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- Slideshow Background (Managed by JS) -->
+        <div class="hero-slideshow" id="heroSlideshow">
+            <div class="slide active" style="background-image: url('assets/hero10-min.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/hero4-min.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/hero7-min.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/hero6-min.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/hero8-min.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/hero9-min.JPG');"></div>
+            <!-- Fallback overlay if images fail -->
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-content">
+            <span class="badge-theme" onclick="document.getElementById('theme').scrollIntoView({behavior: 'smooth'})"
+                style="cursor: pointer; "><i class="fa-solid fa-lightbulb"></i> Theme: Smart Campus - Digitalizing
+                Campus
+                Life</span>
+            <h1 class="glitch-text" data-text="TECHTHRIVE 2.0">TECHTHRIVE <span class="accent">2.0</span></h1>
+            <p class="tagline">Innovate. Integrate. Inspire.</p>
+
+            <div class="hero-meta">
+                <span><i class="fa-regular fa-calendar"></i> 02 Dec 2025</span>
+                <span><i class="fa-regular fa-clock"></i> 9:00 AM - 4:00 PM</span>
+                <span><i class="fa-solid fa-location-dot"></i> Shyamji Auditorium</span>
+            </div>
+
+            <div class="hero-actions">
+                <button class="btn btn-primary btn-large" onclick="openRegisterModal()">
+                    Register Now <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="#problem-statements" class="btn btn-outline btn-large">
+                    View Problem Statements
+                </a>
+            </div>
+
+            <a href="https://docs.google.com/document/d/1ZNq2DIc6gBi-GJqTcPRd6n6bbcTue01J/edit?usp=sharing&ouid=110475960769074966492&rtpof=true&sd=true"
+                target="_blank" class="download-link">
+                <i class="fa-solid fa-download"></i> Download Problem Statements
+            </a>
+        </div>
+
+    </header>
+    
+    <!-- theme section -->
+    <section class="theme-section section-padding" id="theme">
+        <div class="container">
+
+            <div class="theme-container">
+
+                <div class="theme-content">
+                    <div class="badge">Hackathon Theme</div>
+                    <h2 class="theme-title">Smart <span class="text-gradient">Campus</span></h2>
+                    <h3 class="theme-subtitle">Digitalizing Campus Life</h3>
+                    <p class="theme-description">
+                        Reimagine the student experience through thoughtful development of innovative solutions, making
+                        campus life more seamless, secure, and sustainable.
+                    </p>
+                    
+                    <div class="theme-features">
+                        <div class="feature-box">
+                            <i class="fa-solid fa-wifi"></i>
+                            <span>Smart Services</span>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Smart Security</span>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Smart Learning</span>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fa-solid fa-bus"></i>
+                            <span>Smart Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="theme-visual">
+                    <div class="glow-circle"></div>
+                    
+                    <a href="https://www.instagram.com/codex_quantumuniversity/" target="_blank" class="digital-card">
+                        
+                        <i class="fa-solid fa-graduation-cap main-icon"></i>
+                        
+                        <i class="fa-brands fa-instagram insta-icon"></i>
+                        
+                        <div class="floating-badge top-right">
+                            <i class="fa-solid fa-check"></i> Innovate
+                        </div>
+                        <div class="floating-badge bottom-left">
+                            <i class="fa-solid fa-server"></i> Connect
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            
+            <div class="countdown-header">
+                <span class="countdown-badge">
+                    <i class="fa-regular fa-clock"></i> Event Starts In
+                </span>
+            </div>
+            
+            <div id="countdown" class="countdown-grid">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+            <div id="event-started-msg" class="hidden">Event has Ended!</div>
+        </div>
+    </section>
+    
+        <section id="winners-section">
+        <div class="winners-container">
+            <h2 class="title">TechThrive 2.0 <span class="accent">Champions</span></h2>
+            
+            <div class="podium-wrapper">
+                
+                <div class="winner-card runner-up">
+                    <div class="team-photo-wrapper">
+                        <div class="rank-badge">#2</div>
+                        <img src="assets\1RunnerUp.JPG" alt="Team Cyber Knights" class="team-photo">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="winner-info">
+                        <h3 class="team-name">DATA MINDS</h3>
+                        <p class="project-title">AI-Based Attendance System (With Validation Feature)</p>
+                        <span class="prize">Runner-up</span>
+                    </div>
+                </div>
+    
+                <div class="winner-card champion">
+                    <div class="crown-icon">👑</div>
+                    <div class="team-photo-wrapper">
+                        <div class="rank-badge">#1</div>
+                        <img src="assets\Winner.JPG" alt="Team Code Breakers" class="team-photo">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="winner-info">
+                        <h3 class="team-name">THE SIX SENSE</h3>
+                        <p class="project-title">Smart mess waste reduction system</p>
+                        <span class="prize">Winner</span>
+                    </div>
+                </div>
+    
+                <div class="winner-card second-runner-up">
+                    <div class="team-photo-wrapper">
+                        <div class="rank-badge">#3</div>
+                        <img src="assets\2Runnerup.JPG" alt="Team Data Miners" class="team-photo">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="winner-info">
+                        <h3 class="team-name">LOOP-X</h3>
+                        <p class="project-title">AI-powered student assistant for Quantum University </p>
+                        <span class="prize">2nd Runner-up</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Problem Statements -->
+    <section class="section" id="problem-statements">
+        <div class="container">
+
+            <h2 class="title">Problem <span class="accent">Statments</span></h2>
+
+
+
+            <h2>Track A - Focused Challenges</h2>
+            <div id="accordion"></div>
+
+            <h2>Track B - Open Innovation</h2>
+            <div id="openTrack"></div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Timeline Section -->
+    <section class="timeline-section section-padding" id="timeline">
+        <div class="container">
+            <h2 class="section-title">Event <span class="accent">Schedule</span></h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item highlight">
+                    <div class="timeline-time">9:00 AM - 9:30 AM</div>
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Inauguration</h3>
+                        <p>The inauguration will feature ribbon cutting and candle lighting, followed by brief addresses
+                            from distinguished guests offering insights and encouragement for the event’s success.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item ">
+                    <div class="timeline-time">9:30 AM – 1:00 PM</div>
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Coding & Development</h3>
+                        <p>Participants will develop and refine functional prototypes during a focused four-hour sprint,
+                            emphasizing collaboration, technical execution, innovation, and practical implementation
+                            with mentor support.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-time">1:00 PM – 2:00 PM</div>
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Judging – Round 1</h3>
+                        <p>Judges will review each team’s project at their respective tables, evaluating performance and
+                            assigning scores, with top-rated teams advancing to the next round.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-time">2:00 PM – 3:00 PM</div>
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Judging – Round 2</h3>
+                        <p>The top ten teams will present their projects on stage to the expert panel, delivering a
+                            ten-minute demonstration of their prototype, solution, and implementation.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-time">3:00 PM – 3:30 PM</div>
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-spinner"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Result</h3>
+                        <p>Results will be compiled based on presentation clarity, problem relevance, technical
+                            innovation, functionality, feasibility, scalability, and overall impact, determining the
+                            final winners.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-time">3:30 PM – 4:00 PM</div>
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Prize Distribution</h3>
+                        <p>The ceremony will honor winners and runners-up with trophies, medals, and certificates,
+                            followed by a group photo session to formally conclude the event.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About the Event -->
+
+    <section class="about-section section-padding" id="about-event">
+        <div class="container">
+            <div class="about-wrapper">
+
+                <div class="about-content">
+                    <h2 class="section-title">About <span class="accent">TechThrive 2.0</span></h2>
+
+                    <p>
+                        <strong>TechThrive 2.0</strong> is an Intra-College Hackathon organized by the Codex Club to
+                        encourage innovation, collaboration, and real-world problem-solving among students.
+                        This 7-hour intensive coding event challenges participants to develop impactful,
+                        technology-driven solutions under the theme:
+                    </p>
+
+                    <h3 class="about-theme">“Smart Campus – Digitalizing Campus Life”</h3>
+
+                    <p>
+                        Teams will design creative and practical solutions for improving academic, administrative,
+                        and student-life experiences through technology such as AI, IoT, Web, and Automation.
+                        The event promotes hands-on learning, teamwork, and presentation skills—providing a
+                        simulated environment of real-world tech culture.
+                    </p>
+
+                    <ul class="about-points">
+                        <li><i class="fa-solid fa-code"></i> Team-based innovation challenge</li>
+                        <li><i class="fa-solid fa-brain"></i> Real-world problem solving</li>
+                        <li><i class="fa-solid fa-rocket"></i> Prototyping & presentation</li>
+                        <li><i class="fa-solid fa-award"></i> Trophies, medals & certificates for winners</li>
+                    </ul>
+                </div>
+
+                <div class="about-highlight">
+                    <div class="highlight-card">
+                        <h3>Event Date</h3>
+                        <p>02 December 2025</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Duration</h3>
+                        <p>9:00 AM – 4:00 PM</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Venue</h3>
+                        <p>Shyamji Auditorium, QU</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section class="prize-section section-padding" id="prizes">
+        <div class="container">
+            <h2 class="section-title">Prizes</h2>
+
+            <div class="prize-list">
+
+                <div class="prize-item">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div>
+                        <h3>Winner</h3>
+                        <p>Trophy • Certificates • Medal</p>
+                    </div>
+                </div>
+
+                <div class="prize-item">
+                    <i class="fa-solid fa-medal"></i>
+                    <div>
+                        <h3>Runner-Up</h3>
+                        <p>Trophy • Certificates • Medal</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section (Dropdown) -->
+    <section class="faq-section section-padding" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked <span class="accent">Questions</span></h2>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Who can participate in TechThrive 2.0?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Only students of Quantum University are eligible to participate.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is the maximum team size?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Each team can have 3 - 5 members.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is there any registration fee?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, the participation fee is ₹150 per team.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do we need to bring our own laptops?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, participants must bring their own laptops and required accessories.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Will internet and power be provided?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, Wi-Fi, power sockets, and extension boards will be provided.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What technology stack is allowed?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Any technology stack can be used.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are there any prizes?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, exciting prizes will be awarded to the top-performing teams.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How will the winners be selected?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        In Round 1, all teams will be evaluated based on innovation, implementation, impact, and
+                        presentation. The top 10 teams will then qualify for the final round, where they will deliver a
+                        10-minute presentation followed by a face-to-face Q&A session with expert faculty. The winners
+                        will be selected from these top 10 finalists.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-mini-section" id="contact">
+    <div class="contact-container">
+        <h2 class="contact-title">Quick <span class="accent">Connect</span></h2>
+        <p class="contact-sub">Reach the CodeX Team instantly via WhatsApp.</p>
+        
+        <div class="contact-grid">
+            <a href="https://wa.me/9897301104" target="_blank" class="tech-btn whatsapp-btn">
+                <div class="btn-content">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div class="text-group">
+                        <span class="role">Shobhit Singh</span>
+                        <span class="number">+91 98973 01104</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://wa.me/7870745276" target="_blank" class="tech-btn whatsapp-btn">
+                <div class="btn-content">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div class="text-group">
+                        <span class="role">Ashutosh kumar</span>
+                        <span class="number">+91 78707 45276</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <div class="footer-left">
+                <h3>TechThrive <span class="accent">2.0</span></h3>
+                <p>Intra-College Hackathon</p>
+                <p>Quantum University, Roorkee</p>
+            </div>
+
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about-event">About</a></li>
+                    <li><a href="#timeline">Schedule</a></li>
+                    <li><a href="#prizes">Prizes</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <h4>Organized By</h4>
+                <p>Codex Club</p>
+
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/codex_quantumuniversity/"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/codex-qu-b9390435b"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/qucodex"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 TechThrive 2.0 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Floating Action Button (Mobile) -->
+    <button id="fabRegister" class="fab" onclick="openRegisterModal()" aria-label="Register Now">
+        <i class="fa-solid fa-user-plus"></i>
+    </button>
+    <script>
+
+        let load = 0;
+        const loader = document.getElementById("loader");
+        const progress = document.getElementById("progress");
+
+        const loading = setInterval(() => {
+            load++;
+            progress.style.width = load + "%";
+
+            if (load >= 100) {
+                clearInterval(loading);
+                loader.style.display = "none";
+            }
+        }, 20);
+
+
+        console.log("%cHELLO, HACKER 💻", "color:#00ffcc; font-size:20px; font-weight:bold;");
+        console.log("You didn’t find this. You *earned* it.");
+
+        console.log("%c>>> FINAL EASTER EGG UNLOCKED 🗝️ <<<", "color:#ffcc00; font-weight:bold;");
+        console.log("https://forms.gle/spzPjyC6HC7RETNDA");
+
+        console.log("%cWelcome to the challenge.", "color:#ffffff;");
+
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                faqItems.forEach(i => {
+                    if (i !== item) i.classList.remove('active');
+                });
+                item.classList.toggle('active');
+            });
+        });
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section[id]');
+
+        // Highlight on click
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Highlight on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.offsetHeight;
+
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        const timelineCards = document.querySelectorAll('.timeline-content');
+
+        timelineCards.forEach(card => {
+            card.addEventListener('click', function () {
+
+                // If this card is already active, close it and stop here
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active');
+                    return;
+                }
+
+                // Otherwise, close other cards (accordion effect)
+                timelineCards.forEach(otherCard => {
+                    otherCard.classList.remove('active');
+                });
+
+                // Activate the clicked card
+                this.classList.add('active');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const target = document.querySelector('.theme-visual');
+
+            // This Observer setup detects when the element is in the middle of the screen
+            const options = {
+                root: null, // viewport
+                // 'rootMargin' defines the active area. 
+                // -45% from top and -45% from bottom creates a 10% strip in the middle.
+                rootMargin: '-45% 0px -45% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        target.classList.add('scroll-active');
+                    } else {
+                        target.classList.remove('scroll-active');
+                    }
+                });
+            }, options);
+
+            observer.observe(target);
+        });
+    </script>
+
+
+    <script src="problem-statements.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

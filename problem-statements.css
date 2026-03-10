@@ -1,0 +1,158 @@
+/* problem-statements.css */
+body {
+    background: #0a0e17;
+    color: #e0e6ed;
+    font-family: Poppins, sans-serif;
+}
+
+/* Same background style as FAQ */
+.section {
+    padding: 80px 20px;
+    background: radial-gradient(circle at top, #0f172a 0%, #020617 70%);
+    border-top: 1px solid #1e293b;
+    border-bottom: 1px solid #1e293b;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Section Title style (same as FAQ) */
+
+.title {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #ffffff;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(90deg, #00f0ff, #0077ff);
+    margin: 12px auto 0;
+    border-radius: 3px;
+}
+
+/* Optional for small screens */
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .title::after {
+        width: 50px;
+    }
+}
+
+
+.subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 3rem;
+    font-size: 0.95rem;
+}
+
+/* Track heading */
+
+h2 {
+    text-align: center;
+    color: #00f0ff;
+    margin: 50px 0 30px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+/* Accordion */
+
+.accordion-item {
+    background: #131b2c;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 15px 18px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header:hover {
+    background: #0f172a;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 18px;
+    transition: 0.3s;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+    padding: 15px 18px 18px;
+}
+
+.accordion-content p {
+    margin-bottom: 8px;
+    color: #94a3b8;
+}
+
+.accordion-content ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.accordion-header i {
+    transition: 0.3s;
+}
+
+.accordion-item.active .accordion-header i {
+    transform: rotate(180deg);
+    color: #00f0ff;
+}
+
+/* Track B */
+
+.open-card {
+    background: #131b2c;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+}
+
+.open-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.feature-list {
+    list-style: none;           /* remove default bullets */
+    padding-left: 1.5rem;       /* space for our custom arrow */
+    margin: 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 1rem;         /* space between arrow and text */
+    margin-bottom: 0.4rem;      /* optional spacing between points */
+}
+
+.feature-list li::before {
+    content: "➤";               /* small arrow */
+    position: absolute;
+    left: 0;
+    top: 0.15em;                /* vertically align with text */
+    font-size: 0.75em;          /* make it small */
+}
